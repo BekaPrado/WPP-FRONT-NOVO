@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.webp">
+    <script src="wppApi.js" defer ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+            </div>
+            
+            <div class="search-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+                </div>
+            </div>
+            
+            <div class="chat-list" id="contatos">
+            </div>
+        </div>
+        
+        <div class="chat-container" id="conversas">
+            <div class="chat-header">
+                <div class="contact-info">
+                    <div class="contact-avatar">
+                        <img id="contact-profile-img" src="https://via.placeholder.com/40" alt="Contact">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-name" id="contact-name">Selecione um contato</span>
+                        <span class="contact-status" id="contact-status"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+            </div>
+            
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="Digite uma mensagem">
+                <button id="send-button" class="input-voice">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
